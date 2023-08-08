@@ -60,17 +60,17 @@ WKT=$(cat /usr/local/etc/xray/timezone)
 DATE=$(date -R | cut -d " " -f -4)
 MYIP=$(curl -sS ipv4.icanhazip.com)
 # TOTAL ACC CREATE VMESS WS
-vmess=$(grep -c -E "^#vms " "/usr/local/etc/xray/vmess.json")
+#vmess=$(grep -c -E "^#vms " "/usr/local/etc/xray/vmess.json")
 # TOTAL ACC CREATE  VLESS WS
-vless=$(grep -c -E "^#vls " "/usr/local/etc/xray/vless.json")
+#vless=$(grep -c -E "^#vls " "/usr/local/etc/xray/vless.json")
 # TOTAL ACC CREATE  VLESS TCP XTLS
-trojan=$(grep -c -E "^#vxtls " "/usr/local/etc/xray/config.json")
+#trojan=$(grep -c -E "^#vxtls " "/usr/local/etc/xray/config.json")
 # TOTAL ACC CREATE  TROJAN
-ss=$(grep -c -E "^#trx " "/usr/local/etc/xray/tcp.json")
+#ss=$(grep -c -E "^#trx " "/usr/local/etc/xray/tcp.json")
 # TOTAL ACC CREATE  TROJAN WS TLS
-ss20=$(grep -c -E "^#trws " "/usr/local/etc/xray/trojan.json")
+#ss20=$(grep -c -E "^#trws " "/usr/local/etc/xray/trojan.json")
 # TOTAL ACC SOCKS
-ss22=$(grep -c -E "^#trws " "/usr/local/etc/xray/trojan.json")
+#ss22=$(grep -c -E "^#trws " "/usr/local/etc/xray/trojan.json")
 clear
 echo -e " \033[31m##########\033[33m##########\033[32m##########\033[34m##########\033[35m##########\033[36m##########\e[0m"
 echo -e " \033[35m╭══════════════════════════════════════════════════════════╮\e[0m"
@@ -92,8 +92,8 @@ echo -e " \033[35m│$NC    ${GB}↓↓ Down: $dtoday          ↓↓ Down: $dmo
 echo -e " \033[35m│$NC    ${GB}↑↑ Up  : $utoday          ↑↑ Up  : $umon${NC}   "
 echo -e " \033[35m│$NC    ${GB}≈ Total: $ttoday          ≈ Total: $tmon${NC}   "
 echo -e " \033[33m╰══════════════════════════════════════════════════════════╯\e[0m"
-echo -e "      \e[${MB} Vmess   Vless   Trojan   SS   SS2022   Sockes5 \e[0m "    
-echo -e "      \e[${MB}    $vmess         $vless       $trojan        $ss           $ss20           $ss22 \e[0m "
+#echo -e "      \e[${MB} Vmess   Vless   Trojan   SS   SS2022   Sockes5 \e[0m "    
+#echo -e "      \e[${MB}    $vmess         $vless       $trojan        $ss           $ss20           $ss22 \e[0m "
 echo -e " \033[31m╭══════════════════════════════════════════════════════════╮\e[0m"
 echo -e " \033[35m│$NC\033[33m                         MENU XRAY                        $NC\033[35m│\e[0m"
 echo -e " \033[34m╰══════════════════════════════════════════════════════════╯\e[0m"
